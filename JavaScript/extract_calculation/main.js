@@ -4,9 +4,11 @@
 let shopping_cart = [];
 let shopping_cart_total = 0;
 
-// This function is called 'here and there' in the code base, when re-calculating the
-// Cart Total Price is deemed necessary, e.g. when adding an item to the cart, or
-// clicking + icon on an already existing item.
+/*
+This function is called 'here and there' in the code base, when re-calculating the
+Cart Total Price is deemed necessary, e.g. when adding an item to the cart, or
+clicking + icon on an already existing item.
+ */
 function calc_cart_total() {
     shopping_cart_total = 0;
     for (var i = 0; i < shopping_cart.length; i++) {
