@@ -5,11 +5,12 @@ let shopping_cart = []; // action (global variable)
 let shopping_cart_total = 0; // action (global variable)
 
 function calc_total() {
-    shopping_cart_total = 0;
+    let total = 0;
     for (var i = 0; i < shopping_cart.length; i++) {
         var item = shopping_cart[i];
-        shopping_cart_total += item.price;
+        total += item.price;
     }
+    return total;
 }
 
 /*
@@ -18,7 +19,7 @@ Cart Total Price is deemed necessary, e.g. when adding an item to the cart, or
 clicking + icon on an already existing item.
  */
 function calc_cart_total() { // action (contains actions)
-    calc_total();
+    shopping_cart_total = calc_total();
     set_cart_total_dom();
     update_shipping_icons();
     update_tax_dom();
