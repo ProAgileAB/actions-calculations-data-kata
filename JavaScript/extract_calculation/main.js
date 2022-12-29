@@ -4,7 +4,7 @@
 let shopping_cart = []; // action (global variable)
 let shopping_cart_total = 0; // action (global variable)
 
-function calc_total(cart) {
+export function calc_total(cart) {
     let total = 0;
     for (var i = 0; i < cart.length; i++) {
         var item = cart[i];
