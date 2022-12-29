@@ -1,10 +1,10 @@
 {
   "name": "javascript",
   "scripts": {
-    "test": "jest"
+    "test": "vitest"
   },
   "license": "MIT",
   "devDependencies": {
-    "jest": "^29.3.1"
+    "vitest": "^0.26.2"
   }
 }
