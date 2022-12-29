@@ -1,6 +1,5 @@
 Exercise 0
-- how would you unit test the total shopping cart price computation?
-- what is hard with doing it?
+- what is hard with unit testing the total price computation?
 - how would you do it?
 
 Exercise 1
